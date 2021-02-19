@@ -1,9 +1,28 @@
-#include <stdio.h>
-#include "add.h"
+#include <iostream>
+#include "roman.h"
+
+using namespace std;
 
 int main() {
-  printf("hello!\n");
-  printf("%d\n", add(1, 2));
+	
+	Convertor conv;
+	roman rom;
+	int ar;
+	string s = "II";
 
-  return 0;
+	//Sample 1:
+	cin >> s;
+
+	conv.set_roman(roman(s));
+	conv.toArabic();
+	conv.print();
+
+	//Sample 2:
+	cin >> ar;
+
+	conv.set_arabic(arabic(ar));
+	conv.toRoman();
+	conv.print();
+
+	return 0;
 }
