@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 
-set(PROJECT_NAME Roman)
+set(PROJECT_NAME Polinoms)
 project(${PROJECT_NAME})
 
 set(TESTS_T "test_${PROJECT_NAME}")
